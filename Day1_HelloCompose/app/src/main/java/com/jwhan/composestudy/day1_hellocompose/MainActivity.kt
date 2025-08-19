@@ -12,8 +12,11 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.jwhan.composestudy.day1_hellocompose.ui.theme.Day1_HelloComposeTheme
 
 class MainActivity : ComponentActivity() {
@@ -32,7 +35,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun HelloComposeStyled(name: String) {
-    Row() {
+    Column {
         Text(
             text = "Hello $name!",
             modifier = Modifier.padding(16.dp)
@@ -40,7 +43,8 @@ fun HelloComposeStyled(name: String) {
 
         Text(
             text = "Hello $name!",
-            modifier = Modifier.padding(16.dp)
+            modifier = Modifier.padding(16.dp),
+            style = TextStyle(fontSize = 24.sp, color = Color.Red)
         )
     }
 }
