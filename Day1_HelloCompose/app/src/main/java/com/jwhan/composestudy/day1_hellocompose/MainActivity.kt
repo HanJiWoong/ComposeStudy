@@ -35,9 +35,9 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun HelloComposeStyled(name: String) {
-    Row {
+    Column {
         Text(
-            text = "Hello $name!",
+            text = "지웅 \uD83D\uDE00",
             modifier = Modifier.padding(16.dp)
         )
 
