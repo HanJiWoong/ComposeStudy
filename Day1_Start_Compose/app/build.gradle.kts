@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.jwhan.composestudy.day1_start_compose"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.jwhan.composestudy.day1_start_compose"
